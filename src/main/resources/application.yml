@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springKotlin
+    name: MicroServices
   jpa:
     hibernate:
       ddl-auto: update
