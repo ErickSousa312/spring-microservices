@@ -37,6 +37,7 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.7.3'
     runtimeOnly'org.postgresql:postgresql'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation'jakarta.validation:jakarta.validation-api:3.0.2'
 
     // Dependências para testes
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'

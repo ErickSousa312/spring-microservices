@@ -1,5 +1,6 @@
 package spring.controller
 
+import jakarta.validation.Valid
 import kotlinx.serialization.Serializable
 import org.slf4j.LoggerFactory
 import org.springframework.http.ResponseEntity
@@ -44,7 +45,7 @@ class PersonController(
         return ResponseEntity.ok(persons)
     }
     @PostMapping("/add")
-    fun add(@RequestBody person: Person): ResponseEntity<Person> {
+    fun add(@Valid @RequestBody person: Person): ResponseEntity<Person> {
         println(person)
         logger?.info("Received request to add person: {}", person)
         personService.save(person)
